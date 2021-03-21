@@ -20,3 +20,11 @@
    overflow-y: auto;
    z-index: 100;
 }
+
+.close-target {
+   font-size: 25px;
+   position: absolute;
+   right: 0;
+   cursor: pointer;
+   z-index: 99;
+}

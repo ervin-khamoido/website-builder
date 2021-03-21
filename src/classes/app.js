@@ -1,5 +1,9 @@
-import {Site} from './site';
-import {Sidebar} from './sidebar';
+import {
+   Site
+} from './site';
+import {
+   Sidebar
+} from './sidebar';
 
 export class App {
    constructor(model) {
@@ -17,3 +21,9 @@ export class App {
       });
    }
 }
+
+site.addEventListener('click', event => {
+   if (event.target.tagName === 'SPAN' && event.target.classList.contains('close-target')) {
+      event.target.parentNode.remove();
+   }
+});
